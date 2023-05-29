@@ -26,20 +26,29 @@ var_dump($texto);
 */
 
 /*
+TODO: 7. VARIABLES Y CONSTANTES
 *variable numerica
-*/
-
 $edad=20;
-
-/*
 *declarar la variable de texto con USO ESTRICTO 
 *codigo ESTRICTO
-*/
-
 declare(stric_types=1);
-/*----------------------- */
 $nombre= (string)"Mafe";
 
+*variable booleana
+$es_valido=true;
+echo var_dump($nombre);
+
+?constantes
+*NUMERICA
+define("PI",3.14);
+*DE TEXTO
+define("NOMBRE","Mafecita la mas bonita!");
+*BOOLEANA
+define("ES_VALIDO",true);
+
+*/
+
+ 
 /*
 TODO: 9 numeros y operadores
 */
