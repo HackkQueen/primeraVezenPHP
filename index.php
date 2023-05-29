@@ -48,7 +48,37 @@ define("ES_VALIDO",true);
 
 */
 
- 
+/*
+TODO: 8. TIPOS DE DATOS
+?diferentes tipos de datos:
+*Enteros (int)
+*Punto flotante (float)
+*Cadenas de texto (string)
+*Booleanos (bool)
+*Arreglos (array)
+*Objetos (object)
+*Recursos (resource)
+*Nulos (null)
+
+$logueado=true;
+var_dump($logueado);
+
+
+$numero=200;
+var_dump($numero);
+
+$float=200.5;
+var_dump($float);
+
+$texto="Hola mundo";
+var_dump($texto);
+
+$array=[];
+var_dump($array);
+
+*/
+
+
 /*
 TODO: 9 numeros y operadores
 */
