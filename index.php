@@ -8,13 +8,17 @@ TODO: 5. INTRODUCCION A PHP
 *Se revisa la ejecucion del servidor temporal sin embargo nosotros no lo realizamos.
 *Se realiza nuestro primer hola mundo :D
 
-echo '<h1> Hola Mundo </h1>';
+echo '<h1> Hola Mundo cruel </h1>';
 */
-
 /* 
+TODO: 6. FUNCIONES DE SALIDA PHP
+*lAS FUNCIONES MAS COMUNES SON: echo, print, print_r, var_dump
+?echo: imprime una o mas cadenas
+?printf: imprime una cadena
 $texto="Mundo mafe 2023";
 $mensaje=sprintf("Hola %s",$texto);
 echo $mensaje;
+
 *define("MENSAJE","mundo"); arma la cadena
 define("MENSAJE","mundo");
 printf("%s %s",$texto, MENSAJE);
