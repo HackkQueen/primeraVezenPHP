@@ -80,14 +80,36 @@ var_dump($array);
 
 
 /*
-TODO: 9 numeros y operadores
+TODO: 9 NUMEROS Y OPERADORES
+
+*EXISTEN DIFERENTES TIPOS COMO:
+*1. operadores aritmeticos
+*2. operadores de asignacion
+*3. operadores de array
+*4. operadores bitwise
+*5. operadores de comparacion
+*6. operadores de ejecucion
+*7. operadores de error control
+*8. operadores de incremento/decremento
+*9. operadores logicos
+
+url = "https://www.php.net/manual/es/language.operators.php"
 */
 $numero1=20;
 $numero2=10;
-$numero3=50;
+$numero3="50";
 
 var_dump($numero1>$numero2);
 echo "<br>";
-
+var_dump($numero1<$numero2);
+echo "<br>";
+var_dump($numero1>=$numero2);
+echo "<br>";
+var_dump($numero1<=$numero2);
+echo "<br>";
+var_dump($numero2==$numero3);
+echo "<br>";
+var_dump($numero1===$numero3);
+echo "<br>";
 ?>
 
