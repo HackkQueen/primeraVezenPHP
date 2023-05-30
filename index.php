@@ -95,21 +95,130 @@ TODO: 9 NUMEROS Y OPERADORES
 
 url = "https://www.php.net/manual/es/language.operators.php"
 */
+/*
+*Ejemplo de copilacion basica con operadores
+*/
+/*
 $numero1=20;
-$numero2=10;
-$numero3="50";
+$numero2=20;
+$numero3=50;
 
 var_dump($numero1>$numero2);
-echo "<br>";
+echo "<br/>";
 var_dump($numero1<$numero2);
-echo "<br>";
+echo "<br/>";
 var_dump($numero1>=$numero2);
-echo "<br>";
+echo "<br/>";
 var_dump($numero1<=$numero2);
-echo "<br>";
+echo "<br/>";
 var_dump($numero2==$numero3);
-echo "<br>";
+echo "<br/>";
 var_dump($numero1===$numero3);
-echo "<br>";
+echo "<br>/";
+
+
+*1 si IZQUIERDA ES MENOR
+*0 si es IGUAL
+*1 si izquierda es MAYOR
+
+var_dump($numero1<=> $numero2);
+echo "<br/>";
+var_dump($numero2=> $numero3);
+echo "<br/>";
+var_dump($numero2<=> $numero1);
+echo "<br/>";
+*/
+
+include
+$nombreCliente="Campers practicas y sufrimiento con desesperacion campuslands";
+
+/*
+*Conocer extension de un string
+*/
+echo strlen($nombreCliente);
+var_dump($nombreCliente);
+
+/*
+*eliminar espacios en blanco
+*/
+$texto=trim($nombreCliente);
+echo strlen($texto);
+
+/*
+*Convertir a MAYUSCULAS
+*/
+echo strtoupper($nombreCliente);
+
+/*
+*convertir en MINUSCULAS
+*/
+echo strtolower($nombreCliente);
+
+$mail1="correo@correo.com";
+$mail2="Correo@correo.com";
+
+var_dump(strtolower($mail1) === strtolower($mail2));
+echo str_replace('Juan','J', $nombreCliente);
+
+//Revisar si un string existe o no 
+echo strpos($nombreCliente, 'Pedro');
+
+$tipoCliente="Premiun -Empresarial";
+
+echo"<br>";
+echo "El Cliente ". $nombreCliente. " es ". $tipoCliente;
+echo "El cliente {$nombreCliente} es {$tipoCliente}";
+
+
+/*
+TODO: 10. Arreglos, asociativos y funciones para arreglos 
+*Un arreglo puede contener cualquier tipo de valor, como numeros, cademas, objetos, funciones y otros arreglos
+?arreglos INDEXADOS NUMERICAMENTE O ASOCIATIVAMENTE
+*ejemplo
+$miArreglo=array("valor1","valor2","valor3");
+*/
+$carrito=['Tablet','Computadora','Television'];
+
+/*
+?Util para ver los contenidos de un array
+*/
+echo "<pre>";
+var_dump($carrito);
+echo "</pre>";
+/*
+?Acceder a un elemento del array
+*/
+echo $carrito[1];
+/*
+?añade un elemento en el indice 3 del arreglo
+*/
+$carrito[3]='Nuevo Producto...';
+
+/*
+?añadir un elemento al final del array 
+*/
+array_push($carrito,'Audifonos');
+
+/*
+?añadir al inicio
+*/
+array_unshift($carrito,'Smartwatch');
+
+/*
+?util para ver los contenidos de un array
+*/
+echo "<pre>";
+var_dump($carrito);
+echo "</pre>";
+
+$clientes=array('CLiente1','Cliente2','Cliente3');
+echo "<pre>";
+var_dump($clientes);
+echo "</pre>";
+
+echo $clientes[1];
+
+
+
 ?>
 
