@@ -470,6 +470,8 @@ $random = array_rand($frutas);
 
 echo "fruta ramdom: " . $frutas[$randomKey];
 
+echo "\n";
+echo "\n";
 
 $fruits = array('apple', 'banana', 'orange', 'grape', 'kiwi');
 
@@ -478,6 +480,259 @@ $randomKeys = array_rand($fruits, 3);
 foreach ($randomKeys as $key) {
     echo "Random fruit: " . $fruits[$key] . "\n";
 }
+
+/*
+TODO: ARRAY_UNIQUE()
+*se utiliza para eliminar elementos duplicados de un arreglo. 
+($array: El arreglo del cual se eliminarán los elementos duplicados.
+$flags (opcional): Un modificador opcional que afecta el comportamiento de l
+a función al comparar los elementos. Puede ser SORT_REGULAR (valor predeterminado), 
+SORT_NUMERIC o SORT_STRING.)
+*/
+echo "\n";
+echo "\n";
+$hola = array('hola'=>"5", 'como'=>"2", 'estas'=>"2", 'hola'=>"5");
+
+$numeroUnico = array_unique($hola);
+
+print_r($numeroUnico);
+echo "\n";
+echo "\n";
+
+$words = array('apple', 'banana', 'orange', 'banana', 'kiwi', 'apple');
+
+$uniqueWords = array_unique($words);
+
+print_r($uniqueWords);
+
+/*
+TODO: array_intersect()
+*devuelve un nuevo arreglo que contiene los elementos 
+*comunes entre los arreglos proporcionados. 
+*/
+echo "\n";
+echo "\n";
+
+$fruits1 = array('apple', 'banana', 'orange', 'kiwi');
+$fruits2 = array('banana', 'kiwi', 'mango');
+$fruits3 = array('kiwi', 'orange');
+
+$commonFruits = array_intersect($fruits1, $fruits2, $fruits3);
+
+print_r($commonFruits);
+
+$friends1 = array('John', 'Michael','Emma', 'Sarah', 'David');
+$friends2 = array('Sarah', 'David', 'Emma');
+$friends3 = array('Michael', 'Emma');
+
+$Friends = array_intersect($friends1, $friends2, $friends3);
+
+print_r($Friends);
+
+
+/*
+TODO: array_diff()
+*devuelve un nuevo arreglo que contiene los 
+!elementos que están presentes en el primer arreglo pero NO en los siguientes arreglos
+*/
+$friends1 = array('John', 'Michael', 'Sarah', 'David');
+$friends2 = array('Sarah', 'David', 'Emma');
+$friends3 = array('Michael', 'Emma');
+
+$differentFriends = array_diff($friends1, $friends2, $friends3);
+
+print_r($differentFriends);
+
+/*
+TODO: array_push():
+*se utiliza para agregar uno o más elementos al final de un arreglo. 
+*/
+$animales = array('perro', 'gato', 'medusa');
+
+array_push($animales, 'zorro', 'leon');
+
+print_r($animales);
+
+
+/*
+TODO: array_pop():
+*se utiliza para eliminar y devolver el último elemento de un arreglo.
+?Extrae y elimina el último elemento de un array.
+*/
+$colores = array('red', 'blue', 'green', 'yellow');
+
+$lastColor = array_pop($colores);
+
+echo $lastColor; // Output: yellow
+
+print_r($colores);
+
+/*
+TODO: array_reverse()
+*se utiliza para revertir el orden de los elementos en un arreglo. 
+*Devuelve un nuevo arreglo con los elementos en orden inverso. 
+?Revierte el orden de los elementos en un array.
+*/
+$tipoPerros=array('pastor aleman', 'pitbull', 'chihuahua', 'labrador');
+$reversoPerros=array_reverse($tipoPerros);
+print_r($reversoPerros);
+
+/*
+TODO: array_sum()
+*se utiliza para calcular la suma de los elementos en un arreglo.
+*/
+$numeros = array(1, 2, 3, 4, 5);
+
+$suma = array_sum($numeros);
+
+echo $suma; // Output: 15
+
+echo "\n";
+echo "\n";
+$expenso = array(
+    'food' => 50,
+    'transportation' => 30,
+    'utilities' => 70,
+    'entertainment' => 40
+  );
+  
+  $totalExpensos = array_sum($expenso);
+  
+  echo $totalExpensos; // Output: 190
+
+/*
+TODO: array_product()
+*se utiliza para calcular el producto de los elementos en un arreglo.
+?Calcula el producto de los valores de un array.
+*Toma como argumento un arreglo y devuelve el producto de todos los 
+*valores numéricos presentes en él.
+ */
+
+ $numeros = array(2, 3, 4);
+
+ $product = array_product($numeros);
+ 
+ echo $product; // Output: 24 --> 2*3*4
+
+echo "\n";
+echo "\n";
+
+ $prices = array(
+    'item1' => 10,
+    'item2' => 15,
+    'item3' => 5
+  );
+  
+  $totalCost = array_product($prices);
+  
+  echo $totalCost; // Output: 750
+
+/*
+TODO: array_chunk()
+? Devuelve un nuevo arreglo que contiene los fragmentos como sub-arreglos.
+!Esto es útil cuando necesitas procesar o mostrar datos en bloques más manejables.
+*se utiliza para dividir un arreglo en trozos más pequeños.
+*/
+$numeroschunk = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+$chunks = array_chunk($numeroschunk, 3);//significa que se dividira en 3 partes 123 456 789 10
+
+print_r($chunks);
+
+/*
+TODO: array_keys()
+*se utiliza para obtener todas las claves de un arreglo.
+?Devuelve un nuevo arreglo que contiene todas las claves del arreglo original.
+*/
+
+$estudiantes = array(
+    'John' => 85,
+    'Sarah' => 92,
+    'Michael' => 78,
+    'Emma' => 90
+);
+
+$origi = array_keys($estudiantes);
+
+print_r($origi);
+
+/* resultado devolviendo sus valores
+Array
+(
+    [0] => John
+    [1] => Sarah
+    [2] => Michael
+    [3] => Emma
+)
+*/
+
+$estudiantes = array(
+    'John' => 85,
+    'Sarah' => 92,
+    'Michael' => 78,
+    'Emma' => 90
+);
+
+$buscar=78;
+$key = array_keys($estudiantes, $buscar);
+
+print_r($key);
+
+/*
+TODO: array_values()
+?Devuelve un nuevo arreglo que contiene 
+?únicamente los valores del arreglo original, eliminando las claves.
+*se utiliza para obtener todos los valores de un arreglo.
+*/
+
+$fruits = array(
+    'apple' => 'red',
+    'banana' => 'yellow',
+    'orange' => 'orange',
+    'kiwi' => 'green'
+);
+
+$values = array_values($fruits);
+
+print_r($values);
+
+/*
+Array
+(
+    [0] => red
+    [1] => yellow
+    [2] => orange
+    [3] => green
+)
+*/
+/*
+TODO: array_walk():
+? Permite iterar sobre un arreglo y realizar una acción personalizada en cada elemento.
+*se utiliza para iterar sobre cada elemento de un arreglo y 
+*aplicar una función a cada elemento.
+*/
+$names = array('John', 'Sarah', 'Michael', 'Emma');
+
+function printWithGreeting(&$value, $key) {
+    $value = 'Hello, ' . $value;
+}
+
+array_walk($names, 'printWithGreeting');
+
+print_r($names);
+
+echo "\n";
+echo "\n";
+
+$fruits = array('apple', 'banana', 'orange', 'kiwi');
+
+function addPrefix(&$value, $key, $prefix) {
+    $value = $prefix . $value;
+}
+
+array_walk($fruits, 'addPrefix', 'fruit_');
+
+print_r($fruits);
 
 
 ?>
