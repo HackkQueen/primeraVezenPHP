@@ -1,6 +1,71 @@
 <?php
 header('Content-Type: application/json');
 /*
+TODO Que es PHP
+?PHP es un lenguaje de código abierto qué corre del lado del servidor y puede ser incrustado
+?en documentos HTML. 
+*Una de las grandes ventajas que se tiene el programar con PHP es que
+?posee una curva de aprendizaje muy rápido lo cual facilita el proceso de creación de aplicaciones
+?orientadas al servidor. 
+*a pesar de que PHP es un programa orientado servidor permite su implementación en diferentes 
+*entornos de ejecución.
+
+TODO Requisitos para Desarrollar Aplicaciones con PHP.
+*Para poder desarrollar los diferentes scripts en PHP se requiere contar con una aplicación que
+*permita el soporte ejecución a través de un servidor Local. 
+En la industria del desarrollo con PHP hoy en día existen múltiples herramientas 
+que permiten la ejecución en un entorno controlado,
+a continuación, se listan algunos programas que facilitan el proceso al momento de montar y
+configurar un entorno de servidor.
+
+En lenguajes de programación las funciones de salida son aquellos que permiten mostrar
+información al usuario cuando finaliza la ejecución de un proceso determinado o cuando finaliza el
+proceso una petición realizada por el usuario final.
+En PHP existen varias funciones de impresión que permiten mostrar información en la salida
+estándar del servidor web. Las funciones más comunes son:
+ echo(): Esta es la función más común para imprimir en PHP. Se utiliza para mostrar una o
+varias cadenas de texto en la salida del servidor web. La sintaxis básica es la siguiente:
+ print(): Esta función es similar a echo(), pero solo puede imprimir una cadena de texto a la vez.
+La sintaxis básica es la siguiente:
+En este ejemplo, el valor de la variable $texto se incrusta en la cadena usando el marcador %s,
+que indica que se trata de una cadena de texto.
+ sprintf(): Esta función es similar a printf(), pero en lugar de imprimir la cadena formateada en
+la salida estándar, devuelve la cadena formateada como resultado. 
+1.4. Variables y constantes
+Las variables en PHP se definen usando el símbolo $ seguido del nombre de la variable. La asignación
+de un valor a la variable se realiza utilizando el operador =. A continuación, se muestran algunos
+ejemplos de cómo se declaran variables en PHP
+Como se puede observar en la imagen anterior que la línea número 10 se está
+imprimiendo el tipo de dato y el contenido de la variable haciendo uso de la
+función especial var_dump. 
+
+
+todo En PHP, existen varios tipos de datos que se pueden utilizar para almacenar diferentes tipos de
+información. Los tipos de datos más comunes son los siguientes:
+ Enteros (int): se utilizan para almacenar números enteros sin decimales.
+ Punto flotante (float): se utilizan para almacenar números con decimales.
+ Cadenas de texto (string): se utilizan para almacenar texto y caracteres.
+ Booleanos (bool): se utilizan para almacenar valores de verdad o falsedad, que se representan
+por true o false.
+ Arreglos (array): se utilizan para almacenar una colección de datos, que pueden ser de
+diferentes tipos.
+ Objetos (object): se utilizan para almacenar instancias de clases, que son definiciones de
+objetos.
+Como se puede observar en la imagen anterior que la línea número 10 se está
+imprimiendo el tipo de dato y el contenido de la variable haciendo uso de la
+función especial var_dump. 
+ Recursos (resource): se utilizan para almacenar referencias a recursos externos, como
+conexiones a bases de datos o archivos abiertos.
+ Nulos (null): se utilizan para representar una variable sin valor o sin definir.
+Además de estos tipos de datos básicos, PHP también admite otros tipos de datos, como las
+constantes, que se mencionaron anteriormente, y los tipos de datos compuestos, como las
+estructuras de datos y las clases.
+En resumen, en PHP existen varios tipos de datos que se pueden utilizar para almacenar diferentes
+tipos de información, como enteros, cadenas de texto, booleanos, arreglos, objetos y recursos. Es
+importante elegir el tipo de dato adecuado para cada situación, según el tipo de información que se
+desee almacenar y manipular.
+En nuevo la siguiente imagen se podrá observar cómo se define y asignar las variables de acuerdo a
+un tipo de dato.
 TODO: 5. INTRODUCCION A PHP
 *Se realiza la estructura BASICA de un script PHP
 *Se realiza las carpetas manejadas
@@ -78,6 +143,7 @@ $array=[];
 var_dump($array);
 
 */
+//KH
 
 
 /*
