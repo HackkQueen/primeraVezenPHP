@@ -9,6 +9,7 @@ TODO Que es PHP
 ?orientadas al servidor. 
 *a pesar de que PHP es un programa orientado servidor permite su implementación en diferentes 
 *entornos de ejecución.
+prueba todo funciona de manera correcta
 
 TODO Requisitos para Desarrollar Aplicaciones con PHP.
 *Para poder desarrollar los diferentes scripts en PHP se requiere contar con una aplicación que
