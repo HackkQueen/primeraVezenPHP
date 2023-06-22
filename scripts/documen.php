@@ -1,7 +1,23 @@
 <?php
 header('Content-Type: application/json');
 /*
+TODO GLOSARIO PALABRAS PEQUEÑAS
+?PHP: Hypertext Preprocessor
+?HTML: HyperText Markup Language
+?CSS: Cascading Style Sheets
+?JS: JavaScript
+?SQL: Structured Query Language
+?API: Application Programming Interface
+?URL: Uniform Resource Locator
+?HTTP: HyperText Transfer Protocol
+?HTTPS: HyperText Transfer Protocol Secure
+
 TODO Que es PHP
+*Sus siglas significan Hypertext Preprocessor (Preprocesador de Hipertexto).
+?Es un lenguaje de scripting de propósito general. 
+?Puedes hacer “cualquier cosa” que te imagines con él, 
+?por ejemplo comandos para la terminal o aplicaciones de escritorio.
+*Es especialmente adecuada para el desarrollo web y para emplearlo más del lado del servidor.
 ?PHP es un lenguaje de código abierto qué corre del lado del servidor y puede ser incrustado
 ?en documentos HTML. 
 *Una de las grandes ventajas que se tiene el programar con PHP es que
@@ -9,97 +25,171 @@ TODO Que es PHP
 ?orientadas al servidor. 
 *a pesar de que PHP es un programa orientado servidor permite su implementación en diferentes 
 *entornos de ejecución.
-prueba todo funciona de manera correcta
 
-TODO Requisitos para Desarrollar Aplicaciones con PHP.
-*Para poder desarrollar los diferentes scripts en PHP se requiere contar con una aplicación que
-*permita el soporte ejecución a través de un servidor Local. 
-En la industria del desarrollo con PHP hoy en día existen múltiples herramientas 
-que permiten la ejecución en un entorno controlado,
-a continuación, se listan algunos programas que facilitan el proceso al momento de montar y
-configurar un entorno de servidor.
+TODO Cosas que lo hacen amigable 🤗
+*De alto nivel: no significa que sea complicado, sino todo lo contrario. 
+*Es un lenguaje más cercano al humano, es decir, más comprensible de leer y comprender.
+*Es un lenguaje interpretado: no pasa por un proceso de compilación, sino que tenemos 
+*un pequeño programa llamado intérprete que lee y ejecuta instrucción por instrucción nuestro código.
+*Es de tipado débil: no necesitamos definir tipos explícitamente, ya que PHP los define por ti.
 
-En lenguajes de programación las funciones de salida son aquellos que permiten mostrar
-información al usuario cuando finaliza la ejecución de un proceso determinado o cuando finaliza el
-proceso una petición realizada por el usuario final.
-En PHP existen varias funciones de impresión que permiten mostrar información en la salida
-estándar del servidor web. Las funciones más comunes son:
- echo(): Esta es la función más común para imprimir en PHP. Se utiliza para mostrar una o
-varias cadenas de texto en la salida del servidor web. La sintaxis básica es la siguiente:
- print(): Esta función es similar a echo(), pero solo puede imprimir una cadena de texto a la vez.
-La sintaxis básica es la siguiente:
-En este ejemplo, el valor de la variable $texto se incrusta en la cadena usando el marcador %s,
-que indica que se trata de una cadena de texto.
- sprintf(): Esta función es similar a printf(), pero en lugar de imprimir la cadena formateada en
-la salida estándar, devuelve la cadena formateada como resultado. 
-1.4. Variables y constantes
-Las variables en PHP se definen usando el símbolo $ seguido del nombre de la variable. La asignación
-de un valor a la variable se realiza utilizando el operador =. A continuación, se muestran algunos
-ejemplos de cómo se declaran variables en PHP
-Como se puede observar en la imagen anterior que la línea número 10 se está
-imprimiendo el tipo de dato y el contenido de la variable haciendo uso de la
-función especial var_dump. 
+TODO: DATOS PLUS
+?Cliente y servidor
+*Toda nuestra aplicación esta guardada en un servidor, 
+*el cual entrega una copia de la misma a cada cliente que la solicite.
+*Además, el servidor también se encarga de responder cada solicitud del usuario.
 
+?Dominio
+*El dominio es nuestra dirección en internet. 
+*Gracias a él cualquier computadora es capaz de encontrar páginas web.
 
-todo En PHP, existen varios tipos de datos que se pueden utilizar para almacenar diferentes tipos de
-información. Los tipos de datos más comunes son los siguientes:
- Enteros (int): se utilizan para almacenar números enteros sin decimales.
- Punto flotante (float): se utilizan para almacenar números con decimales.
- Cadenas de texto (string): se utilizan para almacenar texto y caracteres.
- Booleanos (bool): se utilizan para almacenar valores de verdad o falsedad, que se representan
-por true o false.
- Arreglos (array): se utilizan para almacenar una colección de datos, que pueden ser de
-diferentes tipos.
- Objetos (object): se utilizan para almacenar instancias de clases, que son definiciones de
-objetos.
-Como se puede observar en la imagen anterior que la línea número 10 se está
-imprimiendo el tipo de dato y el contenido de la variable haciendo uso de la
-función especial var_dump. 
- Recursos (resource): se utilizan para almacenar referencias a recursos externos, como
-conexiones a bases de datos o archivos abiertos.
- Nulos (null): se utilizan para representar una variable sin valor o sin definir.
-Además de estos tipos de datos básicos, PHP también admite otros tipos de datos, como las
-constantes, que se mencionaron anteriormente, y los tipos de datos compuestos, como las
-estructuras de datos y las clases.
-En resumen, en PHP existen varios tipos de datos que se pueden utilizar para almacenar diferentes
-tipos de información, como enteros, cadenas de texto, booleanos, arreglos, objetos y recursos. Es
-importante elegir el tipo de dato adecuado para cada situación, según el tipo de información que se
-desee almacenar y manipular.
-En nuevo la siguiente imagen se podrá observar cómo se define y asignar las variables de acuerdo a
-un tipo de dato.
-TODO: 5. INTRODUCCION A PHP
+?Servidor físico o VPS
+*Es la computadora que se encarga de guardar tu página web y mantener accesible 24/7. 
+*Se le conoce como servidor y siempre está conectado a internet.
+*A través de él podemos definir ciertas reglas de seguridad para nuestra página.
+
+?Servidor web
+*Es un programa que corre dentro de nuestro servidor físico 
+*y se encarga de gestionar cualquier petición que llegue al mismo.
+*Esta petición es procesada por algún lenguaje de programación y al final devuelve una respuesta.
+
+?Métodos HTTP
+*Los métodos HTTP son una forma de comunicación entre el cliente y el navegador. 
+*A través de una solicitud HTTP el cliente es capaz de pedirle al servidor que realice una acción
+
+TODO GET
+?Pedirle al servidor una solicitud
+*Este método permite solicitar información al servidor. 
+*Por ejemplo, podemos pedirle una lista de productos en el caso de 
+*que estemos haciendo un e-commerce o una lista de cursos si tenemos una pagina como Platzi.
+
+TODO POST
+?Este método nos permite pedirle al servidor que nos guarde algo
+*Este método permite guardar información. 
+*Por ejemplo, podemos recabar datos del usuario desde un formulario 
+*y mandarlos a nuestro servidor para procesarlos.
+*podríamos guardarlos para armar una base de datos de usuarios o incluso un sistema de login.
+
+TODO PUT/PATCH
+TODO PUT - Actualiza todo el registro
+TODO Patch - Reemplaza lo necesario, es decir “parcha” la información
+*Estos métodos permiten actualizar información ya guardada. 
+*Por ejemplo, podemos darle la oportunidad a un usuario de actualizar 
+*su correo electrónico o incluso cambiar su contraseña.
+
+?La diferencia es que PUT reemplaza toda la información existente y 
+?PATCH solo reemplaza lo necesario, es decir, “parcha” la información
+
+TODO DELETE
+*Este método lo usamos para eliminar un recurso del servidor. 
+*Por ejemplo, podemos usarlo si deseamos eliminar un blogpost o un comentario.
+*Esto no significa que dejamos eliminarlo necesariamente dentro de nuestra base de datos, 
+*podemos hacer un “Soft delete”.
+
+TODO 1.2. ESTRUCTURA BASICA DE UN SCRIPT PHP
+ESTRUCTURA BASICA:
+*/
+$imagenURL = "img/1.png";
+echo $imagenURL;
+
+/*
+TODO: INTRODUCCION A PHP
 *Se realiza la estructura BASICA de un script PHP
 *Se realiza las carpetas manejadas
 ?Estructura Basica Proyecto en Web/PHP
 *Se analiza la estructura basica de php
 *Se revisa la ejecucion del servidor temporal sin embargo nosotros no lo realizamos.
 *Se realiza nuestro primer hola mundo :D
+*/
 
 echo '<h1> Hola Mundo cruel </h1>';
-*/
+
 /* 
-TODO: 6. FUNCIONES DE SALIDA PHP
-*lAS FUNCIONES MAS COMUNES SON: echo, print, print_r, var_dump
+TODO: FUNCIONES DE SALIDA PHP
+!lAS FUNCIONES MAS COMUNES SON: echo, print, print_r, var_dump, printf, sprintf
 ?echo: imprime una o mas cadenas
+*La función echo se utiliza para imprimir 
+*una o más cadenas en la salida. 
+*Puede imprimir tanto cadenas de texto como variables. 
+*No tiene valor de retorno y 
+*se utiliza principalmente para mostrar contenido en la página web.
+
+?print: es similar a echo y se utiliza para imprimir una cadena. 
+*Sin embargo, a diferencia de echo, 
+*print devuelve siempre el valor 1 y 
+*solo puede imprimir una cadena a la vez.
+
+?print_r: se utiliza para imprimir información sobre una variable 
+*de forma legible para los humanos. 
+*Es especialmente útil para imprimir matrices o 
+*estructuras de datos complejas. 
+*Muestra tanto el tipo de dato como el contenido de la variable.
+
+?var_dump: se utiliza para mostrar información detallada sobre una
+* o más variables, incluyendo su tipo de dato y contenido. 
+*Muestra información adicional, como el tamaño y 
+*la longitud de una cadena, y es útil para depurar 
+*y analizar variables en desarrollo.
+
 ?printf: imprime una cadena
+
+?sprintf():  devuelve la cadena formateada como resultado. 
+
+*/
+echo "Hola mundo cruel";
+
 $texto="Mundo mafe 2023";
 $mensaje=sprintf("Hola %s",$texto);
 echo $mensaje;
+print $mensaje;
 
-*define("MENSAJE","mundo"); arma la cadena
+$array = array("manzana", "banana", "cereza");
+print_r($array);
+
+$numero = 42;
+$texto = "Hola, mundo";
+$array = array(1, 2, 3);
+var_dump($numero);
+var_dump($texto);
+var_dump($array);
+
 define("MENSAJE","mundo");
 printf("%s %s",$texto, MENSAJE);
-var_dump($texto);
-*/
+
+
 
 /*
-TODO: 7. VARIABLES Y CONSTANTES
+TODO:  VARIABLES Y CONSTANTES
+*Una varible empieza simpre con un signo de $ y podemos cambiar su valor
+
+    $numero_1 = 8;
+    
+    $numero_2 = 7;
+
+    echo $numero_1 + $numero2;
+
+*Una constante no se puede cambiar su valor, 
+*como buena practica se crea en mayuscula y 
+*se define de la siguiente forma:
+
+    define("NUMERO_PI", 3.14);
+
+    echo NUMERO_PI;
+
+?Las variables en PHP se definen usando el símbolo $ 
+?seguido del nombre de la variable. 
+?La asignación de un valor a la variable se realiza utilizando el operador =
 *variable numerica
 $edad=20;
 *declarar la variable de texto con USO ESTRICTO 
 *codigo ESTRICTO
 declare(stric_types=1);
 $nombre= (string)"Mafe";
+
+?var_dump: nos permite inspeccionar la variable y 
+*nos da información acerca de ella. 
+*Por ejemplo, en un array nos dice el número de elementos 
+*del array y el tipo que es cada elemento.
 
 *variable booleana
 $es_valido=true;
@@ -114,6 +204,12 @@ define("NOMBRE","Mafecita la mas bonita!");
 define("ES_VALIDO",true);
 
 */
+$personas2020 = [
+    "Carlos" => 22,
+    "Mr. Michi" => 15,
+    "Juan" => 65
+];
+var_dump( $personas2020 );
 
 /*
 TODO: 8. TIPOS DE DATOS
@@ -126,6 +222,40 @@ TODO: 8. TIPOS DE DATOS
 *Objetos (object)
 *Recursos (resource)
 *Nulos (null)
+?Enteros (int): se utilizan para almacenar números enteros sin decimales.
+?Punto flotante (float): se utilizan para almacenar números con decimales.
+?Cadenas de texto (string): se utilizan para almacenar texto y caracteres.
+?Booleanos (bool): se utilizan para almacenar valores de verdad o falsedad, 
+que se representan por true o false.
+?Arreglos (array): se utilizan para almacenar una colección de datos, que pueden ser de
+diferentes tipos.
+?Objetos (object): se utilizan para almacenar instancias de clases, que son definiciones de
+objetos.
+?Recursos (resource): se utilizan para almacenar referencias a recursos externos, como
+conexiones a bases de datos o archivos abiertos.
+?Nulos (null): se utilizan para representar una variable sin valor o sin definir.
+
+
+TODO Casting
+?Es la manera de indicar al interprete de PHP para forzar el cambio 
+?de un tipo de dato a otro deseado. 
+?Se puede acceder a esta utilidad anteponiendo el tipo de dato 
+?entre paréntesis antes de un valor o una variable al momento de 
+?la asignación o inicialización.
+
+*Las siguientes definiciones ayudan a forzar el cambio de tipos en PHP:
+
+*(array) forzado al tipo arreglo
+*(bool) forzado al tipo booleano
+*(boolean) forzado al tipo booleano
+*(double) forzado al tipo ‘punto flotante’
+*(float) forzado al tipo ‘punto flotante’
+*(int) forzado al tipo entero
+*(integer) forzado al tipo entero
+*(object) forzado al tipo objeto
+*(string) forzado al tipo ‘cadena de texto’
+*/
+
 
 $logueado=true;
 var_dump($logueado);
@@ -140,16 +270,37 @@ var_dump($float);
 $texto="Hola mundo";
 var_dump($texto);
 
-$array=[];
+$array=["hola", "como estas"];
 var_dump($array);
 
-*/
-//KH
+//Fácil
+$nombre = "Carlos"; # String
+$apellido = "Gómez"; # String
+$edad = 18; # Integer
+$aprobado = true; # Boolean
 
+//Medio
+# 1.
+$promedio = (8 + 9.5 + 9 + 10 + 8) / 5; # Decimal o Float
+# 2.
+$nombre_completo = $nombre . " " . $apellido; # String
+# 3.
+$presento_examen = (bool) 1; # Boolean
+
+//Avanzado
+# 1.
+$numero_preguntas = 5 + "5"; #Integer
+# 2.
+$numero_respuestas = "5" + 5; # Integer
+# 3.
+$promedio_maximo = $numero_respuestas / 1.0; # Decimal o Float
+# 4.
+$michis = 3 + "5 michis"; # Integer (con Warning)
 
 /*
 TODO: 9 NUMEROS Y OPERADORES
 
+?agrego la imagen de cada uno en img2
 *EXISTEN DIFERENTES TIPOS COMO:
 *1. operadores aritmeticos
 *2. operadores de asignacion
@@ -166,7 +317,7 @@ url = "https://www.php.net/manual/es/language.operators.php"
 /*
 *Ejemplo de copilacion basica con operadores
 */
-/*
+
 $numero1=20;
 $numero2=20;
 $numero3=50;
@@ -184,58 +335,59 @@ echo "<br/>";
 var_dump($numero1===$numero3);
 echo "<br>/";
 
-
+/*
 *1 si IZQUIERDA ES MENOR
 *0 si es IGUAL
 *1 si izquierda es MAYOR
+*/
 
 var_dump($numero1<=> $numero2);
 echo "<br/>";
-var_dump($numero2=> $numero3);
+var_dump($numero2<=> $numero3);
 echo "<br/>";
 var_dump($numero2<=> $numero1);
 echo "<br/>";
-*/
 
-//include
-//$nombreCliente="Campers practicas y sufrimiento con desesperacion campuslands";
+
+include
+$nombreCliente="Campers practicas y sufrimiento con desesperacion campuslands";
 
 /*
 *Conocer extension de un string
 */
-//echo strlen($nombreCliente);
-//var_dump($nombreCliente);
+echo strlen($nombreCliente);
+var_dump($nombreCliente);
 
 /*
 *eliminar espacios en blanco
 */
-//$texto=trim($nombreCliente);
-//echo strlen($texto);
+$texto=trim($nombreCliente);
+echo strlen($texto);
 
 /*
 *Convertir a MAYUSCULAS
 */
-//echo strtoupper($nombreCliente);
+echo strtoupper($nombreCliente);
 
 /*
 *convertir en MINUSCULAS
 */
-//echo strtolower($nombreCliente);
+echo strtolower($nombreCliente);
 
-//$mail1="correo@correo.com";
+$mail1="correo@correo.com";
 $mail2="Correo@correo.com";
 
-//var_dump(strtolower($mail1) === strtolower($mail2));
-//echo str_replace('Juan','J', $nombreCliente);
+var_dump(strtolower($mail1) === strtolower($mail2));
+echo str_replace('Juan','J', $nombreCliente);
 
 //Revisar si un string existe o no 
 //echo strpos($nombreCliente, 'Pedro');
 
 $tipoCliente="Premiun -Empresarial";
 
-//echo"<br>";
-//echo "El Cliente ". $nombreCliente. " es ". $tipoCliente;
-//echo "El cliente {$nombreCliente} es {$tipoCliente}";
+echo"<br>";
+echo "El Cliente ". $nombreCliente. " es ". $tipoCliente;
+echo "El cliente {$nombreCliente} es {$tipoCliente}";
 
 
 /*
